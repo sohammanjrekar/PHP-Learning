@@ -262,4 +262,51 @@ function mark(){
   echo $a;
 }
 mark();
+
+
+// GET and POST 
+   // if ($_SERVER['REQUEST_METHOD']) {
+   //   $email = $_POST['email'];
+   //   $password = $_POST['password'];
+ 
+   //   echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+   //   <strong>SUCCESS!</strong> Your email' . $email . '   and password ' . $password . '  has been submitted successful.
+   //   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+   // </div>';
+   //submit these to a database 
+   // } 
+  // ways to connect to a MYSQL Database
+  // 1) MYSQLi extension
+  // 2) PDO       
+
+  // connecting to the Database
+  $servername = "localhost";
+  $username = "root";
+  $password = "";
+
+  // create a connection
+  $conn = mysqli_connect($servername, $username, $password);
+
+  // die if connection was not successful
+  // if (!$conn) {
+  //   die("sorry we failed to connect: " . mysqli_connect_error());
+  // } else {
+  //   echo "connection is done";
+  // }
+
+  // create   database
+$sql="CREATE DATABASE dbSoham7";
+$result=mysqli_query($conn,$sql);
+// echo "<br>";
+// echo var_dump($result);
+
+
+// check forthe database creation success
+if($result){
+echo "the db was created successfully";
+}
+else{
+echo "the db was not crated".mysqli_error($conn);
+}
+
     ?>
