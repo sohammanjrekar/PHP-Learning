@@ -149,6 +149,109 @@
             }
     echo "<br>";
 
+// $age = 5;
+    // // switch case 
+    // switch ($age) {
+    //   case 12:
+    //     echo "you are 12 ";
+    //     break;
 
+    //   case 48:
+    //     echo "you are 48 ";
+    //     break;
+
+    //   case 5:
+    //     echo "you are 5 ";
+    //     break;
+
+    //   default:
+    //     echo "you are none ";
+    //     break;
+    // }
+    // echo "<br>";
+    // loops in php
+    // 1) while loops
+    // $i = 0;
+    // while ($i < 5) {
+    //   echo $i + 1;
+    //   echo "<br>";
+    //   $i++;
+    // }
+
+    // 2) For loops
+    // for($i=1;$i<6;$i++)
+    // {
+    //   echo "the number is $i <br>";
+    // }
+
+    // 3) do while loop (minimun once runs)
+    // $i=60;
+    // do{
+    //   echo "the number is $i <br>";
+    //   $i++;
+    // }while($i<6);
+
+    // 4) for each loop
+    // $arr = array("banana", "haric", "bread");
+    // foreach ($arr as $i) {
+    //   echo "$i <br>";
+    // }
+
+
+
+    //  functions
+    // function processMarks($marksarr){
+    //   $sum=0;
+    //   foreach ($marksarr as $k){
+    //     $sum = $sum + $k;
+    //   } 
+    //   return $sum;
+    // }
+    // $sohams=[51,75,48,12];
+    // $summark = processMarks($sohams);
+    // echo $summark;
+
+
+    // echo "welcome to world of dates <br>";
+    // $d = date("d S l D Y , g:i A");
+    // echo "Todays date is $d <br>";
+
+    // prints something like :Monday 8th of August 2005 03:12:46 PM
+    // echo date("l js \of F Y h:i:s A");
+
+    // prints : july 1,2000 is on a saturday
+    // echo "<br> july 1,2000 is on a ".date("l" ,mktime(0,0,0,7,1,2000));
+
+  
+  // $arr =array('this','that','what');
+  // echo $arr[0];
+  // echo $arr[1];
+  // echo $arr[2];
+
+// associative arrays
+// $favcol=array(
+// 'soham'=> "red",
+// 'mohan'=> "blue",
+// 'raj'=>'green');
+
+// echo $favcol['soham'];
+// foreach($favcol as $key => $value){
+//   echo "Favorite color of $key is $value <br>";
+// }
+
+// multi dimensional array
+$multi=array(
+    array(2,5,4,6),array(4,8,9,5),array(8,5,9,6)
+  );
+  // echo $multi[1][2];
+  // echo var_dump($multi);
+  for($i=0;$i<count($multi);$i++){
+    for($j=0;$j<count($multi[$i]);$j++){
+       echo $multi[$i][$j];
+       echo "  ";
+    }
+    echo "<br>";
+  }
+  
 
     ?>
