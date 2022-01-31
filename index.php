@@ -253,5 +253,13 @@ $multi=array(
     echo "<br>";
   }
   
-
+// scope anad local global vars
+$a=65; //global variable
+function mark(){
+  $a=5;  //local variable
+  global $a; //use global keyword for access global variable
+  // when global variable can permanet change in function
+  echo $a;
+}
+mark();
     ?>
